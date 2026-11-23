@@ -1,0 +1,206 @@
+// ── Content data: carousel slides, blogs, reviews, orders, crops ─────────────
+
+// 5 auto-playing promo slides. Each references a real product for "Buy Now".
+export const SLIDES = [
+  {
+    id: 's1',
+    brand: 'Pioneer',
+    brandColor: '#dc2626',
+    headline: 'Arize 6444 Gold — Kharif paddy hybrid that yields up to 20% more',
+    sub: 'Limited seed stock. Free delivery above ₹499.',
+    oldPrice: 800,
+    newPrice: 640,
+    cta: 'Buy Now',
+    productId: 'p-001',
+    image: 'https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=1400&q=70',
+    tint: 'from-emerald-900/85 via-emerald-800/60 to-transparent',
+  },
+  {
+    id: 's2',
+    brand: 'IFFCO',
+    brandColor: '#15803d',
+    headline: 'Nano Urea Plus — half the urea, full harvest. Now at ₹240',
+    sub: 'Government-approved. 500 ml covers one acre in two sprays.',
+    oldPrice: 300,
+    newPrice: 240,
+    cta: 'Buy Now',
+    productId: 'p-015',
+    image: 'https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1400&q=70',
+    tint: 'from-green-900/85 via-green-800/60 to-transparent',
+  },
+  {
+    id: 's3',
+    brand: 'Mahyco',
+    brandColor: '#7c3aed',
+    headline: 'Bollgard II cotton seeds — bollworm protection from day one',
+    sub: 'Trusted by 12 lakh farmers. 450 g packet per acre.',
+    oldPrice: 1050,
+    newPrice: 820,
+    cta: 'Buy Now',
+    productId: 'p-003',
+    image: 'https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=1400&q=70',
+    tint: 'from-lime-900/85 via-green-800/55 to-transparent',
+  },
+  {
+    id: 's4',
+    brand: 'UPL',
+    brandColor: '#b45309',
+    headline: 'Neptune 16 L battery sprayer — ₹1,000 off this week only',
+    sub: '2-year warranty • double brass nozzles • 4–6 hr runtime',
+    oldPrice: 4200,
+    newPrice: 3200,
+    cta: 'Buy Now',
+    productId: 'p-022',
+    image: 'https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=1400&q=70',
+    tint: 'from-amber-900/85 via-stone-800/55 to-transparent',
+  },
+  {
+    id: 's5',
+    brand: 'Bayer',
+    brandColor: '#0e7a3d',
+    headline: 'Nativo 300 SC — broad-spectrum blight control for tomato & chilli',
+    sub: 'Systemic + translaminar action. 100 ml pocket pack.',
+    oldPrice: 680,
+    newPrice: 540,
+    cta: 'Buy Now',
+    productId: 'p-008',
+    image: 'https://images.unsplash.com/photo-1625246333195-78d4f61ad8dc?auto=format&fit=crop&w=1400&q=70',
+    tint: 'from-teal-900/85 via-emerald-800/60 to-transparent',
+  },
+];
+
+// Shop by Crop tiles
+export const CROPS = [
+  { name: 'Paddy', emoji: '🌾', image: 'https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=400&q=60' },
+  { name: 'Cotton', emoji: '🌸', image: 'https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=400&q=60' },
+  { name: 'Chilli', emoji: '🌶️', image: 'https://images.unsplash.com/photo-1447175008436-054170c2e979?auto=format&fit=crop&w=400&q=60' },
+  { name: 'Tomato', emoji: '🍅', image: 'https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=400&q=60' },
+  { name: 'Maize', emoji: '🌽', image: 'https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?auto=format&fit=crop&w=400&q=60' },
+];
+
+// 6 blog / farmer-tip posts
+export const BLOGS = [
+  {
+    id: 'b1',
+    title: 'Paddy transplanting: spacing and seedling age guide for kharif 2026',
+    category: 'Crop Advisory',
+    author: 'Dr. Meera Kulkarni',
+    date: 'Nov 2026',
+    readTime: '8 min read',
+    image: 'https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=640&q=60',
+    excerpt: 'Why 21–25 day seedlings and 20 × 15 cm spacing consistently out-yield older seedlings by 8–12%, with field data from three districts.',
+  },
+  {
+    id: 'b2',
+    title: 'Bollworm early warning: pheromone trapping threshold for cotton',
+    category: 'Crop Protection',
+    author: 'Agri Team',
+    date: 'Oct 2026',
+    readTime: '6 min read',
+    image: 'https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=640&q=60',
+    excerpt: 'Install 5 traps per acre from squaring stage; spray only after 6–8 moths per trap per week. Saves one spray per season.',
+  },
+  {
+    id: 'b3',
+    title: 'PM-KISAN 21st instalment: who gets ₹2,000 and by when',
+    category: 'Government Schemes',
+    author: 'Yojana Copilot',
+    date: 'Oct 2026',
+    readTime: '5 min read',
+    image: 'https://images.unsplash.com/photo-1625246333195-78d4f61ad8dc?auto=format&fit=crop&w=640&q=60',
+    excerpt: 'Eligibility, e-KYC deadline and how to check your payment status on pmkisan.gov.in in under two minutes.',
+  },
+  {
+    id: 'b4',
+    title: 'Drip vs sprinkler for chilli: a cost-per-acre comparison',
+    category: 'Irrigation',
+    author: 'Ravi Prasad, Horticulture Scientist',
+    date: 'Sep 2026',
+    readTime: '10 min read',
+    image: 'https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=640&q=60',
+    excerpt: 'Drip costs ₹12,000–15,000/acre upfront but saves 40% water and lifts grade-A yield by 18% — payback inside two seasons.',
+  },
+  {
+    id: 'b5',
+    title: 'Jeevamrutham at home: the ₹80 microbial tonic every organic farmer needs',
+    category: 'Organic Farming',
+    author: 'Lakshmi Devi, Rythu Vedika',
+    date: 'Sep 2026',
+    readTime: '7 min read',
+    image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=640&q=60',
+    excerpt: 'Cow dung, ghee, jaggery and water — ferment 48 hours and your soil’s microbial count doubles. Step-by-step with photos.',
+  },
+  {
+    id: 'b6',
+    title: 'Mandi prices this week: chilli, onion and tur dal — 11 mandis compared',
+    category: 'Mandi Prices',
+    author: 'Market Desk',
+    date: 'Nov 2026',
+    readTime: '4 min read',
+    image: 'https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=640&q=60',
+    excerpt: 'Guntur chilli flat at ₹18,400/quintal, Lasalgaon onion up 12%, Gulbarga tur firm. Full arrivals table inside.',
+  },
+];
+
+// 8 customer reviews (home page carousel/grid)
+export const REVIEWS = [
+  { id: 'r1', name: 'Venkatesh Reddy', location: 'Gudivada, Andhra Pradesh', rating: 5, text: 'Ordered Arize hybrid seeds and got delivery in 2 days with proper invoice. Yield was 18% better than last year. Genuine products, good price.', product: 'Pioneer Arize 6444 Gold', crop: 'Paddy' },
+  { id: 'r2', name: 'Savitri Devi', location: 'Warangal, Telangana', rating: 5, text: 'IFFCO Nano Urea is amazing — used half the urea and the crop looks the same dense green. Helpline explained dosage in Telugu.', product: 'IFFCO Nano Urea Plus', crop: 'Chilli' },
+  { id: 'r3', name: 'Manjunatha K', location: 'Davangere, Karnataka', rating: 4, text: 'Battery sprayer works well for 5 acres. Battery backup is slightly less than claimed but nozzle quality is good. Quick replacement support.', product: 'UPL Neptune 16 L Sprayer', crop: 'Cotton' },
+  { id: 'r4', name: 'Prakash Patil', location: 'Latur, Maharashtra', rating: 5, text: 'Bought Bollgard-II seeds through Farmers Products. 100% germination, zero bollworm till week 6. Will order again for rabi.', product: 'Mahyco Bollgard II', crop: 'Cotton' },
+  { id: 'r5', name: 'Lakshmi Narayanan', location: 'Erode, Tamil Nadu', rating: 4, text: 'Vermicompost quality is excellent, very dark and odourless. Delivery to my village took 3 days — acceptable for rural pin code.', product: 'IFFCO Vermicompost', crop: 'Tomato' },
+  { id: 'r6', name: 'Harpreet Singh', location: 'Ludhiana, Punjab', rating: 5, text: 'DAP 50 kg bag at genuine MRP, no adulteration. Bought 40 bags for 10 acres. UPI payment and GST invoice — very professional.', product: 'Zuari DAP', crop: 'Maize' },
+  { id: 'r7', name: 'Geeta Kumari', location: 'Bhagalpur, Bihar', rating: 5, text: 'Cattle feed improved my buffalo milk from 8 to 10 litres. Mineral mixture is genuinely effective. Support team speaks Hindi.', product: 'IFFCO Cattle Feed', crop: 'Dairy' },
+  { id: 'r8', name: 'Ramesh Naik', location: 'Hubballi, Karnataka', rating: 4, text: 'Tomato hybrid Saaho gave firm fruits with good shelf life. Docked one star for late dispatch — products fine, logistics improving.', product: 'Mahyco Saaho Tomato', crop: 'Tomato' },
+];
+
+// Dummy orders for Track Order page — lookup by ID (case-insensitive)
+export const DUMMY_ORDERS = [
+  {
+    id: 'FP1001',
+    placedOn: '02 Nov 2026',
+    total: 2140,
+    items: ['Pioneer Arize 6444 Gold Paddy Seeds × 2', 'IFFCO Nano Urea Plus 500 ml × 1'],
+    status: 'delivered',
+    address: 'Vill. Rampur, Post Unnao, Dist. Krishna, Andhra Pradesh – 521101',
+    timeline: [
+      { stage: 'Order placed', at: '02 Nov, 09:14 AM', done: true },
+      { stage: 'Packed at warehouse', at: '02 Nov, 06:40 PM', done: true },
+      { stage: 'Shipped — Delhivery', at: '03 Nov, 08:10 AM', done: true },
+      { stage: 'Out for delivery', at: '04 Nov, 10:20 AM', done: true },
+      { stage: 'Delivered', at: '04 Nov, 01:15 PM', done: true },
+    ],
+  },
+  {
+    id: 'FP1002',
+    placedOn: '09 Nov 2026',
+    total: 3850,
+    items: ['UPL Neptune 16 L Battery Sprayer × 1', 'UPL Saaf Fungicide 250 g × 2'],
+    status: 'in_transit',
+    address: 'Survey No. 44/2, Near Lake Road, Warangal, Telangana – 506001',
+    timeline: [
+      { stage: 'Order placed', at: '09 Nov, 11:02 AM', done: true },
+      { stage: 'Packed at warehouse', at: '09 Nov, 07:30 PM', done: true },
+      { stage: 'Shipped — Delhivery', at: '10 Nov, 09:00 AM', done: true },
+      { stage: 'Out for delivery', at: 'Expected 12 Nov', done: false },
+      { stage: 'Delivered', at: 'Pending', done: false },
+    ],
+  },
+  {
+    id: 'FP1003',
+    placedOn: '11 Nov 2026',
+    total: 1350,
+    items: ['Zuari DAP Fertilizer 50 kg × 1'],
+    status: 'processing',
+    address: 'H.No. 8-12, Main Road, Latur, Maharashtra – 413512',
+    timeline: [
+      { stage: 'Order placed', at: '11 Nov, 07:45 AM', done: true },
+      { stage: 'Packed at warehouse', at: 'In progress', done: false },
+      { stage: 'Shipped — Delhivery', at: 'Pending', done: false },
+      { stage: 'Out for delivery', at: 'Pending', done: false },
+      { stage: 'Delivered', at: 'Pending', done: false },
+    ],
+  },
+];
+
+export const TRUST_ITEMS = ['100% Support', 'Trust', 'Quality', 'Knowledge'];

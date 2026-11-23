@@ -1,0 +1,27 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+dist-ssr
+
+# Environment variables (Supabase keys)
+.env
+.env.local
+.env.*.local
+
+# Local data from the old static server (customer names, phones, addresses)
+harvest-direct-static/data
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Editor / OS files
+.vscode/*
+!.vscode/settings.json
+.idea
+.DS_Store
+*.suo
+*.sw?
