@@ -44,7 +44,7 @@ export default function Footer() {
         </div>
 
         {/* Shop categories */}
-        <nav aria-label="Footer shops links">
+        <nav aria-label="Footer shop links">
           <p className="text-xs font-extrabold uppercase tracking-widest text-brand-300">Shop</p>
           <ul className="mt-2 space-y-1.5 text-sm">
             {CATEGORIES.filter((c) => c.slug !== 'blogs').map((c) => (
