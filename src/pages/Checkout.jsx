@@ -20,6 +20,8 @@ export default function Checkout() {
   const [errors, setErrors] = useState({});
   const [placing, setPlacing] = useState(false);
   const [placedOrder, setPlacedOrder] = useState(null); // { id, name, total, address }
+  const MERCHANT_UPI_ID = '9347939628@ybl';
+  const MERCHANT_NAME = 'Farmers Products';
 
   // Pre-fill name from the logged-in session
   useEffect(() => {
